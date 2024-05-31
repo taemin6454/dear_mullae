@@ -1,0 +1,44 @@
+<html>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="./js/jquery.min.js"></script>
+   <script type="text/javascript" src="./js/function.js"></script>
+   <link href="./css/style.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+   <div id="logo_area">
+      <img src="./img/dear_logo.png"/>
+   </div>
+   <div id="form_container">
+      <form method="get" id="sentences_form" onsubmit="return false;">
+         <h1> 성별을 선택해주세요(남/녀)</h1>
+         <input type="radio" id="man" name="gender" value="man">
+         <label for="man">남</label><br>
+         <input type="radio" id="woman" name="gender" value="woman">
+         <label for="woman">녀</label><br>
+
+         <!--
+         <input type="text" value="" id="sentence1" placeholder="내 마음의 돌덩이를 입력하세요.">
+         <input type="text" value="" id="sentence2" placeholder="내 마음의 돌덩이를 입력하세요.">
+         <input type="text" value="" id="sentence3" placeholder="내 마음의 돌덩이를 입력하세요.">
+         -->
+         <a href="#" id="start_btn" class="btn-3d green" onclick="fnStartBtn()">Next ▶</a>
+      </form>
+   </div>
+   <div id="game_container" class="none">
+      <p id="text1"></p>
+      <p id="text2"></p>
+      <p id="text3"></p>
+      <p id="text4"></p>
+      <video id="background-video" class="panels" muted>
+         <source id="videoSrc" src="./video/IMG_5365.MP4" type="video/mp4">
+       </video>
+    </div>
+    <div id="end_page" class="none"></div>
+
+</body>
+
+</html>
