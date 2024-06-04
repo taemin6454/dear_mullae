@@ -5,6 +5,8 @@ var stone_text3 = '';
 var enter_cnt = 0;
 var check_enter_cnt = false;
 
+var select_value = 0;
+
 $(function(){
 
   $('body').keypress(function(event){
@@ -111,3 +113,43 @@ function fnStartBtn(){
   }
 };
 
+
+function fnCheckSelect(num) {
+  select_value = num;
+}
+
+
+function fnMovePage(id, nextID) {
+  if (nextID == 'start') {
+        if (select_value == 1) {
+          fnMovePage('#difficult_container', '#fruit_num1');
+        }
+        else if (select_value == 2) {
+          fnMovePage('#difficult_container', '#manager_num1');
+        }
+        else if (select_value == 3) {
+          fnMovePage('#difficult_container', '#family_num1');
+        }
+        else {
+          alert("힘들었던 것 한 가지를 선택해주세요");
+        }
+    }
+
+  else if (nextID == 'last') {
+      if (select_value == 1) {
+        $("#letter_from_god").css({"background-image" : "url('./img/fianl_result1.png')"});
+        fnMovePage('#letter', '#letter_from_god');
+      } else if (select_value == 2) {
+        $("#letter_from_god").css({"background-image" : "url('./img/fianl_result2.png')"});
+        fnMovePage('#letter', '#letter_from_god');
+      } else if (select_value == 3) {
+        $("#letter_from_god").css({"background-image" : "url('./img/fianl_result2.png')"});
+        fnMovePage('#letter', '#letter_from_god');
+      }
+  }
+
+  else {
+    $(id).addClass("none");
+    $(nextID).removeClass("none", "");
+}
+}
