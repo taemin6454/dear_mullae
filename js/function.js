@@ -74,35 +74,35 @@ function fnMovePage(id, nextID) {
 
   else if (nextID == 'last') {
       if (select_value == 1 && gender == 1) {
-        document.getElementById('background-video').src = "./video/아들 열매.mp4";
+        document.getElementById('background-video').src = "./video/son_fruit.mp4";
         fnMovePage('#letter', '#letter_from_god');
       }
       else if (select_value == 1 && gender == 2) {
-        document.getElementById('background-video').src = "./video/딸 열매.mp4";
+        document.getElementById('background-video').src = "./video/daughter_fruit.mp4";
         fnMovePage('#letter', '#letter_from_god');
       }
       else if (select_value == 2 && gender == 1) {
-        document.getElementById('background-video').src = "./video/아들 윗사명자.mp4";
+        document.getElementById('background-video').src = "./video/son_missionary.mp4";
         fnMovePage('#letter', '#letter_from_god');
       }
       else if (select_value == 2 && gender == 2) {
-        document.getElementById('background-video').src = "./video/딸 윗사명자.mp4";
+        document.getElementById('background-video').src = "./video/daughter_missionary.mp4";
         fnMovePage('#letter', '#letter_from_god');
       }
       else if (select_value == 3 && gender == 1 && select_parants == 1) {
-        document.getElementById('background-video').src = "./video/아버지 아들.mp4";
+        document.getElementById('background-video').src = "./video/father_son.mp4";
         fnMovePage('#letter', '#letter_from_god');
       }
       else if (select_value == 3 && gender == 1 && select_parants == 2) {
-        document.getElementById('background-video').src = "./video/어머니 아들.mp4";
+        document.getElementById('background-video').src = "./video/mother_son.mp4";
         fnMovePage('#letter', '#letter_from_god');
       }
       else if (select_value == 3 && gender == 2 && select_parants == 1) {
-        document.getElementById('background-video').src = "./video/아버지 딸.mp4";
+        document.getElementById('background-video').src = "./video/father_daughter.mp4";
         fnMovePage('#letter', '#letter_from_god');
       }
       else if (select_value == 3 && gender == 2 && select_parants == 2) {
-        document.getElementById('background-video').src = "./video/어머니 딸.mp4";
+        document.getElementById('background-video').src = "./video/mother_daughter.mp4";
         fnMovePage('#letter', '#letter_from_god');
       }
   }
