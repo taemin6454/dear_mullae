@@ -14,6 +14,15 @@ function fnName() {
 }
 
 
+function fnCallName() {  
+  var only_name = "";
+  if (reciever_name.length >= 3) {
+    only_name = reciever_name.substring(1);
+  }
+  document.getElementById('callName').innerText = only_name + "아(야) 최근 가장 힘들었던 건 뭐였어?";
+}
+
+
 function fnCheckSelect(num) {
   select_value = num;
 }
@@ -39,6 +48,7 @@ function fnMovePage(id, nextID) {
     }
     else {
       fnMovePage('#gender_container', '#difficult_container');
+      fnCallName();
     }
   }
 
