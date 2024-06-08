@@ -109,6 +109,15 @@ body {
   margin: 0 auto;
 }
 
+#callName {
+  font-family: 'Hahmlet';
+  font-size: 40px;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
 #difficult_form {
   position: absolute;
   left: 50%;
